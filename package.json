@@ -1,6 +1,6 @@
 {
-  "name": "zmqrgg68--run",
-  "version": "0.0.0",
+  "name": "visitor-management-app",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@types/node": "^20.0.0",
