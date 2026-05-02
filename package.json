@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-router-dom": "^7.14.2",
+    "recharts": "^3.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
