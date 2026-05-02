@@ -13,12 +13,12 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
   }
 }
