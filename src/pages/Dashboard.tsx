@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
 import './Dashboard.css';
 
@@ -20,12 +21,18 @@ const recentGuests = [
 ];
 
 export const Dashboard: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate('/login');
+  };
+
   return (
     <div className="dashboard-container">
       {/* Header */}
       <div className="dashboard-header">
         <h1>لوحة التحكم</h1>
-        <button className="logout-btn">تسجيل الخروج</button>
+        <button className="logout-btn" onClick={handleLogout}>تسجيل الخروج</button>
       </div>
 
       {/* Stats Cards */}
