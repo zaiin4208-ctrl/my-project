@@ -1,7 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
-import Demo from './Demo';
+import App from './App';
 
-ReactDOM.createRoot(document.querySelector("#root")).render(
-  <Demo />
+ReactDOM.createRoot(document.querySelector("#root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
