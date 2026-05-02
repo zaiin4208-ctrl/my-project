@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 
 export const LoginPage: React.FC = () => {
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate login
+    // Simulate login then navigate to dashboard
     setTimeout(() => {
-      alert(`Login with: ${phone}`);
-      setLoading(false);
+      navigate('/dashboard');
     }, 1500);
   };
 
